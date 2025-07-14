@@ -1,0 +1,106 @@
+/* 🎨 Global Base Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #475C7A; /* Deep Blue */
+    color: #FCBB6D;            /* Light Orange */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📦 Main App Container */
+.app {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #685D79; /* Dark Lavender */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 📝 App Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ✍️ Input & Add Section */
+.input-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AB6C82; /* Dusty Mauve */
+    color: white;
+}
+
+/* ➕ Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #DB737F; /* Muted Pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 📋 Task List */
+ul.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* 📌 Task Items */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #AB6C82; /* Default Active BG */
+    color: white;
+}
+
+/* ✅ Completed Tasks */
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* 🟣 Active Task */
+.active span {
+    font-weight: 500;
+}
+
+/* 🗑️ Delete Button */
+.delete-btn {
+    margin-left: 10px;
+    background-color: #DB737F; /* Muted Pink */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+}

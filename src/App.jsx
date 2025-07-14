@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import "./style.css";
 import TodoItems from "./TodoItems.jsx";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-      <div className="App">
+      <div className="app">
           <div className="input-section">
               <label>Task:<input type="text" placeholder="Enter your task here" value={input}
               onChange={(e)=>setInput(e.target.value)}/></label>
@@ -33,10 +33,14 @@ function App() {
           </div>
           <div>
               <ul className="task-list">
-                  {task.map((t, index) => <TodoItems
-                  key={index} index={index} task={t}
-                  onClick={()=>toggleTask(index)}
-                  onDelete={()=>deleteTask(index)}/>)}
+                  {task.map((t, index) =>
+                      <TodoItems
+                          key={index}
+                          index={index}
+                          task={t}
+                          onClick={() => toggleTask(index)}
+                          onDelete={() => deleteTask(index)}
+                    />)}
               </ul>
           </div>
       </div>
