@@ -36,6 +36,7 @@ h1 {
 }
 
 .input-section label {
+    color: #FFFFFF;
     flex: 1;
     display: flex;
     align-items: center;
@@ -47,14 +48,14 @@ input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #AB6C82; /* Dusty Mauve */
+    background-color: #475C7A; /* deep-blue */
     color: white;
 }
 
 /* ➕ Button Styling */
 button {
     padding: 10px 20px;
-    background-color: #DB737F; /* Muted Pink */
+    background-color: #475C7A; /* deep-blue */
     color: white;
     border: none;
     border-radius: 5px;
@@ -78,7 +79,7 @@ li {
     margin-bottom: 10px;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #AB6C82; /* Default Active BG */
+    background-color: #475C7A; /* Dark Blue*/
     color: white;
 }
 
@@ -96,7 +97,7 @@ li {
 /* 🗑️ Delete Button */
 .delete-btn {
     margin-left: 10px;
-    background-color: #DB737F; /* Muted Pink */
+    background-color: #685D79; /* dark lavender */
     color: white;
     border: none;
     border-radius: 4px;
