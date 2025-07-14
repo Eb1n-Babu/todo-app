@@ -1,11 +1,12 @@
 import React from 'react';
 
-function TodoItems({task,onClick}) {
+function TodoItems({task,onClick,onDelete}) {
     return (
         <div>
-            <li
-            onClick={onClick}
-            className={task.completed ? "completed" : "active"}>{task.text}</li>
+            <li className={task.completed ? "completed" : "active"}>
+                <span>onClick={onClick} {task.text}</span>
+                <button onClick={onDelete} className="delete-btn">🗑 Delete</button>
+            </li>
         </div>
     );
 }

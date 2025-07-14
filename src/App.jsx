@@ -14,8 +14,13 @@ function App() {
   }
 
   const toggleTask = index => {
-      const updatedTask = task.map((task,i)=>
-      i===index ?{...task, completed: !task.completed}:task);
+      const updatedTask = task.map((t,i)=>
+      i===index ?{...t, completed: !t.completed}:t);
+      setTask(updatedTask)
+  }
+
+  const deleteTask = index => {
+      const updatedTask = task.filter((_,i)=>i!==index);
       setTask(updatedTask)
   }
 
@@ -28,8 +33,10 @@ function App() {
           </div>
           <div>
               <ul className="task-list">
-                  {task.map((task, index) => <TodoItems
-                  index={index} task={task} onClick={toggleTask(index)}/>)}
+                  {task.map((t, index) => <TodoItems
+                  key={index} index={index} task={t}
+                  onClick={()=>toggleTask(index)}
+                  onDelete={()=>deleteTask(index)}/>)}
               </ul>
           </div>
       </div>
